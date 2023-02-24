@@ -1,0 +1,72 @@
+.slider-component {
+  padding: 5rem 0;
+}
+
+.slide {
+  opacity: 0;
+  position: absolute;
+}
+
+.slide img {
+  max-width: 100%;
+  border-radius: 30px;
+  box-shadow: 0px 10px 36px -12px rgba(243, 206, 206, 0.75);
+}
+
+.activ-anim {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.btn-slider {
+  line-height: 0.8;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 100px;
+  position: absolute;
+  top: 45%;
+}
+
+.btn-slider:hover {
+  cursor: pointer;
+}
+
+.btn-left {
+  left: 15px;
+}
+
+.btn-right {
+  right: 15px;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 5%;
+  z-index: 1;
+  width: 100%;
+}
+
+.dot {
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  margin: 0 0.2rem;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 17px;
+  height: 17px;
+  background-color: rgb(245, 216, 216);
+}
